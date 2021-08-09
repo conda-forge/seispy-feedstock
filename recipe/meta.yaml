@@ -1,5 +1,5 @@
 {% set name = "seispy" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/python-{{ name }}/python-{{ name }}-{{ version }}.tar.gz
-  sha256: bdd1bbcd2de70ab232eada27d86ed96a292191c9f0c841c2141c0029735e4649
+  sha256: 44cc23458f64b590fc0711101772c85b398953be9128981cf085ba602aeba73b
 
 build:
   number: 0
@@ -57,7 +57,7 @@ about:
   home: https://pypi.org/project/python-seispy/
   license: GPL-3.0-or-later
   license_file: LICENSE.txt
-  summary: "Python module of seismology and receiver functions"
+  summary: Python module of seismology and receiver functions
   doc_url: https://seispy.xumijian.me/
   dev_url: https://github.com/xumi1993/seispy
 
