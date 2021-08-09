@@ -11,7 +11,7 @@ source:
   sha256: bdd1bbcd2de70ab232eada27d86ed96a292191c9f0c841c2141c0029735e4649
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - gen_rayp_lib=seispy.psrayp:gen_rayp_lib
@@ -35,7 +35,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - matplotlib >=3.2.0
+    - matplotlib-base >=3.2.0
     - netcdf4 >=1.5.2
     - numpy >=1.19.0
     - obspy >=1.2.0
