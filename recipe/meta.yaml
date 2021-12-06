@@ -30,6 +30,7 @@ build:
     - rfani=seispy.scripts:rfani
     - ccp3d=seispy.scripts:ccp3d
     - get_pierce_points=seispy.scripts:get_pierce_points
+    - veltxt2mod=seispy.modcreator:veltxt2mod
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
