@@ -1,6 +1,6 @@
 {% set name = "seispy" %}
 
-{% set version = "1.2.9" %}
+{% set version = "1.2.11" %}
 
 
 
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/python-{{ name }}/python-{{ name }}-{{ version }}.tar.gz
-  sha256: f197fb8e10ae7c27b4427cec47b7b9540a31d3d3c706c94c1aa4edaeac731d70
+  sha256: 17ad87b9a220e80ec9f28d57066a0de413789c94150390f60cad7befeb4ba66f
 
 build:
   number: 0
