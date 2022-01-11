@@ -39,7 +39,7 @@ requirements:
     - python >=3.6
   run:
     - matplotlib >=3.2.0
-    - numpy >=1.19.0
+    - numpy >=1.19.0,<1.22.0
     - obspy >=1.2.0
     - pandas >=1.0.0
     - pyqt >=5.12.0
