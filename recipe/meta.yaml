@@ -17,7 +17,8 @@ build:
   noarch: python
   entry_points:
     - gen_rayp_lib=seispy.psrayp:gen_rayp_lib
-    - prf=seispy.rf:prf
+    - prf=seispy.scripts:prf
+    - srf=seispy.scripts:srf
     - setpar=seispy.rf:setpar
     - rf2depth=seispy.rf2depth_makedata:rf2depth
     - plotrt=seispy.plotRT:main
