@@ -62,8 +62,14 @@ test:
     - ccp_profile -h
     - rfani -h
     - rfharmo -h
-#   requires:
-#     - pytest
+  requires:
+    - {{ cdt('xorg-x11-proto-devel') }}  # [linux]
+    - {{ cdt('libx11-devel') }}          # [linux]
+    - {{ cdt('libxext-devel') }}         # [linux]
+    - {{ cdt('libxrender-devel') }}      # [linux]
+    - {{ cdt('mesa-libgl-devel') }}      # [linux]
+    - {{ cdt('mesa-libegl-devel') }}     # [linux]
+    - {{ cdt('mesa-dri-drivers') }}      # [linux]
 
 about:
   home: https://pypi.org/project/python-seispy/
