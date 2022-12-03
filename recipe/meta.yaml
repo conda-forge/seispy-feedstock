@@ -53,9 +53,17 @@ test:
   imports:
     - seispy
   commands:
-    - pip check
-  requires:
-    - pip
+    - prf -h
+    - rf2depth -h
+    - download_catalog -h
+    - pickrf -h
+    - pickdepth -h
+    - ccp3d -h
+    - ccp_profile -h
+    - rfani -h
+    - rfharmo -h
+#   requires:
+#     - pytest
 
 about:
   home: https://pypi.org/project/python-seispy/
