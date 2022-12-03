@@ -25,6 +25,7 @@ build:
     - plotr=seispy.scripts:plot_r
     - download_catalog=seispy.catalog:main
     - ccp_profile=seispy.scripts:ccp_profile
+    - pickdepth=seispy.pickdepth.pickdepthui:main
     - hk=seispy.hk:hk
     - pickrf=seispy.pickrf.pickui:main
     - rfani=seispy.scripts:rfani
