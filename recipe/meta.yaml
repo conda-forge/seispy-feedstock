@@ -56,8 +56,6 @@ test:
     - prf -h
     - rf2depth -h
     - download_catalog -h
-    - pickrf -h
-    - pickdepth -h
     - ccp3d -h
     - ccp_profile -h
     - rfani -h
