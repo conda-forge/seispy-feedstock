@@ -1,6 +1,6 @@
 {% set name = "seispy" %}
 
-{% set version = "1.2.18" %}
+{% set version = "1.3.0" %}
 
 
 
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/python-{{ name }}/python-{{ name }}-{{ version }}.tar.gz
-  sha256: 8ed889ac51a9bf56489ce1a7f5ee7f8f398145134506bb2ed4f38a8435ffd9d1
+  sha256: e877cd15c8e64a3f2630ad9455004b7e9868deecc671fe1801ae82750a55bf4a
 
 build:
   number: 0
@@ -41,13 +41,12 @@ requirements:
     - python >=3.8
   run:
     - matplotlib-base >=3.5.0
-    - numpy >=1.19.0
-    - obspy >=1.3.0
-    - pandas >=1.0.0
-    - pyside6 >=6.3.0
-    - python >=3.6
-    - scipy >=1.9.2
-    - scikits-bootstrap >=1.0.0
+    - numpy
+    - obspy
+    - pandas
+    - pyside6
+    - scipy
+    - scikits-bootstrap
 
 test:
   imports:
@@ -56,20 +55,12 @@ test:
     - prf -h
     - rf2depth -h
     - download_catalog -h
-    - pickrf -h
-    - pickdepth -h
     - ccp3d -h
     - ccp_profile -h
     - rfani -h
     - rfharmo -h
-  requires:
-    - {{ cdt('xorg-x11-proto-devel') }}  # [linux]
-    - {{ cdt('libx11-devel') }}          # [linux]
-    - {{ cdt('libxext-devel') }}         # [linux]
-    - {{ cdt('libxrender-devel') }}      # [linux]
-    - {{ cdt('mesa-libgl-devel') }}      # [linux]
-    - {{ cdt('mesa-libegl-devel') }}     # [linux]
-    - {{ cdt('mesa-dri-drivers') }}      # [linux]
+#   requires:
+
 
 about:
   home: https://pypi.org/project/python-seispy/
