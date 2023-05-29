@@ -48,6 +48,7 @@ requirements:
     - pyside6
     - scipy
     - scikits-bootstrap
+    - pyproj
 
 test:
   imports:
