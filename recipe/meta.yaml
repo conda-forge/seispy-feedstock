@@ -49,6 +49,7 @@ requirements:
     - scipy
     - scikits-bootstrap
     - pyproj
+    - numba
 
 test:
   imports:
