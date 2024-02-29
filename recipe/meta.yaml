@@ -1,6 +1,6 @@
 {% set name = "seispy" %}
 
-{% set version = "1.3.4" %}
+{% set version = "1.3.5" %}
 
 
 
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/python-{{ name }}/python-{{ name }}-{{ version }}.tar.gz
-  sha256: 134e5acc373171d2ac84ef537014571d1f03a62923ac46650d2447fb9eebd8cc
+  sha256: c6625cf8bda35c36cd7f335c4dbb770999541c423d557886452f750b895ab339
 
 build:
   number: 0
@@ -33,6 +33,8 @@ build:
     - rfharmo=seispy.scripts:rfharmo
     - get_pierce_points=seispy.scripts:get_pierce_points
     - veltxt2mod=seispy.modcreator:veltxt2mod
+    - get_stations=seispy.scripts:get_stations
+    - get_events=seispy.scripts:get_events
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -49,6 +51,7 @@ requirements:
     - scipy
     - scikits-bootstrap
     - pyproj
+    - numba
 
 test:
   imports:
