@@ -33,6 +33,8 @@ build:
     - rfharmo=seispy.scripts:rfharmo
     - get_pierce_points=seispy.scripts:get_pierce_points
     - veltxt2mod=seispy.modcreator:veltxt2mod
+    - get_stations=seispy.scripts:get_stations
+    - get_events=seispy.scripts:get_events
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
