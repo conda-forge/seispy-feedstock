@@ -10,7 +10,6 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-{{ name }}/python_{{ name }}-{{ version }}.tar.gz
-
   sha256: 7b61e1da48d50117a954580ed9aa6a28a8ce46075090d4e509fdd29ed1adff88
 
 build:
@@ -41,10 +40,10 @@ build:
 requirements:
   host:
     - pip
-    - python {{ python_min }}.*
+    - python
     - setuptools
   run:
-    - python >={{ python_min }}
+    - python >=3.10
     - matplotlib-base >=3.5.0
     - numpy <2.0.0
     - obspy
@@ -57,7 +56,7 @@ requirements:
 
 test:
   requires:
-    - python ={{ python_min }}
+    - python >=3.10
   imports:
     - seispy
   commands:
