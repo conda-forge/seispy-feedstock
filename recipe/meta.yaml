@@ -1,7 +1,7 @@
 {% set python_min = "3.10" %}
 {% set name = "seispy" %}
 
-{% set version = "1.3.10" %}
+{% set version = "1.3.11" %}
 
 
 
@@ -10,8 +10,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/p/python-{{ name }}/python_{{ name }}-{{ version }}.tar.gz
-  sha256: a5c259116b5d5a30cb53c227208f6160fd088d232776ee839c7619bbb1a64161
+  url: https://files.pythonhosted.org/packages/source/p/python-{{ name }}/python_{{ name }}-{{ version }}.tar.gz
+  sha256: 62a5e55400d49e7696a373a422833626bb9c92a7a8517a8b16b31170c971d4d3
 
 
 build:
